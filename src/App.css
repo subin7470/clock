@@ -173,7 +173,7 @@ transform: rotate(-45deg);
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 500px;
-  box-shadow: #757575 4px 4px 8px, red -8px -8px 8px, red 8px -8px 8px;}
+  box-shadow: #757575 4px 4px 8px,orange -8px -8px 8px, red 8px -8px 8px;}
 
   .hour {
     animation: spin 43200s linear infinite;
