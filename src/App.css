@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+body
+{
+  margin:0;
+  padding:0;
+ background: linear-gradient(to right, rgb(68, 160, 141), rgb(9, 54, 55));
+  height: calc(100vh - 86px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.boardname{
+ color: #fdef48;
+  left: 50%;
+  right: 50%;
+  width: 290px;
+  font-family: -webkit-body;
+  letter-spacing: 1px;
+  font-weight: bold;
+  top: 10px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 42px;
+  text-shadow: 2px 4px 8px #042323;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loader
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:200px;
+  height:200px;
+  box-sizing:border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo
+{
+ position: absolute;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 12px solid #04040417;
 }
 
-.App-link {
-  color: #61dafb;
+.loader .face
+{
+  position:absolute;
+  border:2px solid #12121221;
 }
 
-@keyframes App-logo-spin {
-  from {
+.loader .face.face1
+{
+  top:-60px;
+  left:-60px;
+  right:-60px;
+  bottom:-60px;
+  background: #944a4a3d;
+  border-radius:50%;
+  border-left:5px solid #ffff00;
+ 
+  border-right:5px solid  #ffff00 ;
+ 
+  animation: animate 10s linear infinite;
+}
+
+.loader .face.face2
+{
+  top:-40px;
+  left:-40px;
+  right:-40px;
+  bottom:-40px;
+  background: #09090917;
+  border-radius:50%;
+ 
+  border-bottom:5px solid #03a9f4;
+  
+  border-top:5px solid #03a9f4;
+   animation: animate 10s linear reverse infinite;
+}
+
+.loader .face .circle
+{
+
+  position:absolute;
+  top: calc(50% - 1px);
+  left:50%;
+  width:50%;
+  height:2px;
+  transform-origin:left;
+}
+
+.loader .face.face1 .circle
+{
+transform: rotate(-45deg);
+}
+
+.loader .face.face2 .circle
+{
+transform: rotate(-45deg);
+}
+
+
+/* .loader .face .circle:before
+{
+  content:'';
+  position: absolute;
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background:#fff;
+  top:-4px;
+  right:-6px;
+} */
+
+
+/* .loader .face.face1 .circle:before
+{
+  background: #ffff00;
+  box-shadow:0 0 20px #ff0,
+             0 0 40px #ff0,
+             0 0 60px #ff0,
+             0 0 80px #ff0,
+             0 0 100px #ff0,
+             0 0 0 5px rgba(255,255,0,.1);
+} */
+
+/* .loader .face.face2 .circle:before
+{
+  background: #f403d4;
+  box-shadow:0 0 20px  #f403d4,
+             0 0 40px  #f403d4,
+             0 0 60px  #f403d4,
+             0 0 80px #f403d4,
+             0 0 100px  #f403d4,
+             0 0 0 5px rgba(3,169,244,.1);
+} */
+
+
+
+@keyframes animate
+{
+  0%
+  {
     transform: rotate(0deg);
   }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+  
+
+  
+  
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+}
+
+.clock {
+  height: calc(215px + 20vh);
+  width: calc(215px + 20vh);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 500px;
+  box-shadow: #757575 4px 4px 8px, red -8px -8px 8px, red 8px -8px 8px;}
+
+  .hour {
+    animation: spin 43200s linear infinite;
+    transform-origin: center left;
+    transform-box: fill-box;
+    transform: rotate(-90deg);
+    
+  }
+
+  .minute {
+    animation: spin 3600s linear infinite;
+    transform-origin: center left;
+    transform-box: fill-box;
+    transform: rotate(-90deg);
+   
+  }
+ 
+
+  .second {
+    animation: spin 60s linear infinite;
+    transform-origin: center left;
+    transform-box: fill-box;
+    transform: rotate(-90deg);
+    height: 1px;
+  }
+
+
+.digital {
+  font-size: 50px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
   to {
     transform: rotate(360deg);
   }
 }
+/*  */
+
+
+
+
