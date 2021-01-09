@@ -174,8 +174,8 @@ transform: rotate(-45deg);
 }
 
 .clock {
-  height: calc(150px + 20vh);
-  width: calc(150px + 20vh);
+  height: calc(150px + 80vh);
+  width: calc(150px + 80vh);
   position: absolute;
   left: 50%;
   top: 50%;
