@@ -174,14 +174,14 @@ transform: rotate(-45deg);
 }
 
 .clock {
-  height: calc(150px + 50vh);
-  width: calc(150px + 50vh);
+  height: calc(170px + 20vh);
+  width: calc(170px + 20vh);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 500px;
-  box-shadow: orange -8px -8px 8px, red 8px -8px 8px;
+  border-radius: 340px;
+  /* box-shadow: orange -8px -8px 8px, red 8px -8px 8px; */
 }
 
   .hour {
