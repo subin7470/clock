@@ -65,9 +65,9 @@ function App() {
       <svg className='clock' width='100%' height="100%" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path className='frame' d="M68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34Z" fill="white"/>
       
-      <rect className='minute' x="32" y="34" width="21" height="3"  fill="black" />
-      <rect className='hour' x="32" y="34" width="17" height="3.5"  fill="black"/>
-      <rect className='second' x="32" y="35" width="22" height="2"  fill="#DD172A"/>
+      <rect className='minute' x="32" y="34" width="19" height="3"  fill="black" />
+      <rect className='hour' x="32" y="34" width="15" height="3.5"  fill="black"/>
+      <rect className='second' x="32" y="35" width="18" height="2"  fill="#DD172A"/>
       </svg>
       
       
