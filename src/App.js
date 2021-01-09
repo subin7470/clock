@@ -55,12 +55,15 @@ function App() {
     
     <div style={{display:'flex'}}>
 
-
-
+  
+<text style={{fontSize:20,fontStyle:'italic',fontWeight:'bold',margin:'5%',marginLeft:'18%'}}>PLEASE ROTATE THE PHONE TO CHANGE VIEW</text>
 
 
 <div class="loader" style={{display:'flex'}}>
+  
 <div className="container"style={{display:'flex'}}>
+
+ 
       
       <svg className='clock' width='100%' height="100%" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path className='frame' d="M68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34Z" fill="white"/>
